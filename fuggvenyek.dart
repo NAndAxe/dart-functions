@@ -28,7 +28,7 @@ List<int> getDividers(szam){
 
 List<String> getVowels(String szo){
     List<String> mghang = ["a", "e", "u", "i", "o"];
-    List<String> stringMghi = mghang.where((x) => szo.contains(x)).toList();
+    List<String> stringMghi = mghang.where((x) => szo.toLowerCase().contains(x)).toList();
 
     return stringMghi;
 
@@ -36,7 +36,7 @@ List<String> getVowels(String szo){
 
 List<String> getConsonants(String szo){
     List<String> msghang = ["q", "w", "r", "t", "z", "p", "l", "k", "j", "h", "g", "f", "d", "s", "y", "x", "c", "v", "b", "n", "m"];
-    List<String> stringMghi = msghang.where((x) => szo.contains(x)).toList();
+    List<String> stringMghi = msghang.where((x) => szo.toLowerCase().contains(x)).toList();
 
     return stringMghi;
 
